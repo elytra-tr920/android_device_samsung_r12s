@@ -13,13 +13,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/e1s
+DEVICE_PATH := device/samsung/r12s
 
 # Inherit from common
 $(call inherit-product, device/samsung/s5e9945/common.mk)
 
 # Inherit from vendor
-$(call inherit-product, vendor/samsung/e1s/e1s-vendor.mk)
+$(call inherit-product, vendor/samsung/r12s/r12s-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
