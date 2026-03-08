@@ -1,0 +1,55 @@
+<compatibility-matrix version="7.0" type="device">
+    <hal format="hidl" optional="true">
+        <n>android.frameworks.displayservice</n>
+        <version>1.0</version>
+        <interface>
+            <n>IDisplayService</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <n>android.frameworks.schedulerservice</n>
+        <version>1.0</version>
+        <interface>
+            <n>ISchedulingPolicyService</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <n>android.frameworks.sensorservice</n>
+        <version>1.0</version>
+        <interface>
+            <n>ISensorManager</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <n>android.hardware.gnss</n>
+        <version>2</version>
+        <interface>
+            <n>IGnss</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <n>vendor.samsung.frameworks.codecsolution</n>
+        <interface>
+            <n>ISehCodecSolution</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <n>vendor.samsung.frameworks.security.ucm.crypto</n>
+        <version>1.0</version>
+        <interface>
+            <n>ISehUcmKeystore</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <vendor-ndk>
+        <version>34</version>
+    </vendor-ndk>
+    <system-sdk>
+        <version>34</version>
+    </system-sdk>
+</compatibility-matrix>

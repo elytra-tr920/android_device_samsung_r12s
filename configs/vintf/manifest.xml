@@ -1,0 +1,198 @@
+<manifest version="7.0" type="device" target-level="8">
+    <hal format="hidl">
+        <n>android.hardware.audio</n>
+        <transport>hwbinder</transport>
+        <version>7.1</version>
+        <interface>
+            <n>IDevicesFactory</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.audio.effect</n>
+        <transport>hwbinder</transport>
+        <version>7.0</version>
+        <interface>
+            <n>IEffectsFactory</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.bluetooth</n>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <n>IBluetoothHci</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" override="true">
+        <n>android.hardware.gatekeeper</n>
+        <interface>
+            <n>IGatekeeper</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <n>android.hardware.gnss</n>
+        <version>3</version>
+        <interface>
+            <n>IGnss</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <n>android.hardware.graphics.allocator</n>
+        <interface>
+            <n>IAllocator</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.graphics.mapper</n>
+        <transport arch="32+64">passthrough</transport>
+        <version>4.0</version>
+        <interface>
+            <n>IMapper</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.media.c2</n>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <n>IComponentStore</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.renderscript</n>
+        <transport arch="32+64">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <n>IDevice</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" override="true">
+        <n>android.hardware.security.keymint</n>
+        <version>3</version>
+        <interface>
+            <n>IKeyMintDevice</n>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <n>IKeyMintDevice</n>
+            <instance>strongbox</instance>
+        </interface>
+        <interface>
+            <n>IRemotelyProvisionedComponent</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" override="true">
+        <n>android.hardware.security.secureclock</n>
+        <interface>
+            <n>ISecureClock</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" override="true">
+        <n>android.hardware.security.sharedsecret</n>
+        <interface>
+            <n>ISharedSecret</n>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <n>ISharedSecret</n>
+            <instance>strongbox</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.hardware.soundtrigger</n>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <n>ISoundTriggerHw</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>android.system.wifi.keystore</n>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <n>IKeystore</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>vendor.samsung.hardware.audio</n>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <n>ISehDevicesFactory</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>vendor.samsung.hardware.bluetooth</n>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <n>ISehBluetooth</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <n>vendor.samsung.hardware.gnss</n>
+        <version>3</version>
+        <interface>
+            <n>ISehGnss</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <n>vendor.samsung.hardware.keymint</n>
+        <version>3</version>
+        <interface>
+            <n>ISehKeyMintExtension</n>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <n>ISehKeyMintFactory</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>vendor.samsung.hardware.tlc.blockchain</n>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <n>ISehBlockchain</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>vendor.samsung.hardware.tlc.payment</n>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <n>ISehTlcPayment</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <n>vendor.samsung_slsi.hardware.SbwcDecompService</n>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <n>ISbwcDecompService</n>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <sepolicy>
+        <version>34.0</version>
+    </sepolicy>
+</manifest>

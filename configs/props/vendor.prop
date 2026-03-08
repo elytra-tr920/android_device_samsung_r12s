@@ -1,0 +1,21 @@
+# Codec2
+debug.stagefright.c2inputsurface=-1
+vendor.debug.c2.sbwc.enable=true
+
+# Graphics
+debug.renderengine.backend=skiavkthreaded
+ro.hardware.vulkan=samsung
+ro.hwui.use_vulkan=true
+ro.opengles.version=196610
+
+# Power
+vendor.powerhal.disp.idle_support=false
+
+# RIL
+ro.telephony.default_network=26
+
+# Fingerprint
+ro.vendor.fingerprint.type=udfps
+# Screen: 1080x2340 @ 450dpi
+# Sensor location: X=540 (center), Y=1950 (80% down), R=100
+ro.vendor.fingerprint.sensor_location=540|1950|100
